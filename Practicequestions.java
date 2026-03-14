@@ -127,3 +127,95 @@ public class Practicequestions {
         scanner.close();
     }
 }
+
+import java.util.*;
+public class Practicequestions{
+  public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  String fullname = sc.nextLine();
+  String lastname = sc.nextLine();
+  
+  String name = fullname + " " + lastname;
+  
+  
+  System.out.println("Full Name: " + name);
+  }
+}
+
+
+
+
+
+
+import java.util.*;
+public class Practicequestions{
+  public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  
+  int totalminutes = sc.nextInt();
+  
+  int hours = totalminutes / 60 ;
+  int minutes = totalminutes % 60 ;
+  
+  
+  System.out.println(totalminutes + " minutes is " + hours + " hours and " + minutes + " minutes. ");
+  
+  }
+}
+
+
+
+
+import java.util.*;
+public class Practicequestions{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    
+    
+    System.out.println("Before swapping: a = " + a + ", b = " + b);
+    
+    
+    
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    
+    
+    
+    System.out.println("After swapping: a = " + a + ", b = " + b);
+    
+    
+    
+    
+  }
+}  
+
+
+
+
+
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    int choice = sc.nextInt();
+    double temp = sc.nextDouble();
+    
+    
+    if(choice == 2){
+      double c = (temp - 32) * 5 / 9;
+      System.out.println("Temperature in Celsius: " + c);
+    }else if (choice == 1){
+      double f = (temp * 9 / 5) + 32;
+      System.out.println("Temperature in Fahrenheit: " + f);
+    }
+  }
+}
+
+
+
+
